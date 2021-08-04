@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg shadow-sm navbar-dark text-light" style="background-color: #3f51b5;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand mt-2 mt-lg-0" routerLink="/">
+                Ecom
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="admin">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="">Projects</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <a class="text-reset me-3" routerLink="">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <a class="text-reset me-3" routerLink="" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                <i class="fas fa-bell"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+
+            <a class="dropdown-toggle d-flex align-items-center hidden-arrow" routerLink="" id="navbarDropdownMenuLink"
+                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt=""
+                    loading="lazy" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                    <a class="dropdown-item" routerLink="">My profile</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" routerLink="">Settings</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" routerLink="">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
 
@@ -16,6 +15,7 @@ dotenv.config({path: './config/config.env'})
 connectDB();
 
 // Routes
+app.use('/admin', require('./routes/admin'));
 app.use('/', require('./routes/index'));
 
 app.listen(3000);
