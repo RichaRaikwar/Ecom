@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./latest-products.component.css']
 })
 export class LatestProductsComponent implements OnInit {
-
-  constructor() { }
+   constructor() { }
 
   ngOnInit(): void {
+   
   }
+
 
 }
