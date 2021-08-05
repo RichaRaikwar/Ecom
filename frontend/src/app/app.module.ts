@@ -20,6 +20,7 @@ import { LatestProductsComponent } from './home/latest-products/latest-products.
 import { OffersComponent } from './home/offers/offers.component';
 import { TopBrandsComponent } from './home/top-brands/top-brands.component';
 import { HomeComponent } from './home/home.component';
+import { AdminViewProductComponent } from './admin/admin-view-product/admin-view-product.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { HomeComponent } from './home/home.component';
     OffersComponent,
     TopBrandsComponent,
     CategoryComponent,
-    FooterComponent
+    FooterComponent,
+    AdminViewProductComponent
   ],
   imports: [
     BrowserModule,
