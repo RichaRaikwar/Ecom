@@ -1,0 +1,11 @@
+img{
+    height: 200px;
+    width: auto;
+}
+
+.container-fluid{
+    background-color: beige;
+}
+a{
+    cursor: pointer;
+}
