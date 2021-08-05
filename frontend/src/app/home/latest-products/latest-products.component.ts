@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/service/product.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-latest-products',
@@ -6,11 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./latest-products.component.css']
 })
 export class LatestProductsComponent implements OnInit {
-   constructor() { }
+   constructor(private productService:ProductService,private route:ActivatedRoute) { }
+
+   product: any;
+  id: any;
 
   ngOnInit(): void {
-   
+     this.id = this.route.snapshot.params.id;
+    this.getProductData();
   }
+
+  getProductData() {
+    this.productService.getProductById(this.id).subscribe(res => {
+      this.product = res;
+    })
+  }
+
 
 
 }

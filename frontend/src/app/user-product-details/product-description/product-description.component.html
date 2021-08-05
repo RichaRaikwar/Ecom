@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="accordion" id="accordionExample">
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Product Details
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr *ngFor="let item of des | keyvalue">
+                                        <td>{{item.key| titlecase}}</td>
+                                        <td>{{item.value}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="col-md-4">
+            <div>
+                <h1 class="fa fa-truck text-primary"></h1>
+                <h1 class="fa fa-undo-alt text-primary"></h1>
+                <h1 class="fa fa-truck text-primary"></h1>
+            </div>
+        </div> -->
+    </div>
+
+</div>
+
