@@ -16,8 +16,7 @@ router.get("/api/products", (req, res) => {
   });
 });
 
-
-// Get Single Product 
+// Get Single Product By Id
 router.get("/api/product/:id", (req, res) => {
   Product.findById(req.params.id, (err, data) => {
     if (!err) {
@@ -27,7 +26,6 @@ router.get("/api/product/:id", (req, res) => {
     }
   });
 });
-
 
 // Save Product
 router.post("/api/product/add", (req, res) => {
@@ -43,13 +41,11 @@ router.post("/api/product/add", (req, res) => {
   emp.save((err, data) => {
     if (!err) {
       // res.send(data);
-      res
-        .status(200)
-        .json({
-          code: 200,
-          message: "Product Added Successfully",
-          addProduct: data,
-        });
+      res.status(200).json({
+        code: 200,
+        message: "Product Added Successfully",
+        addProduct: data,
+      });
     } else {
       console.log(err);
     }
@@ -74,13 +70,11 @@ router.put("/api/product/update/:id", (req, res) => {
     { new: true },
     (err, data) => {
       if (!err) {
-        res
-          .status(200)
-          .json({
-            code: 200,
-            message: "Product Updated Successfully",
-            updateProduct: data,
-          });
+        res.status(200).json({
+          code: 200,
+          message: "Product Updated Successfully",
+          updateProduct: data,
+        });
       } else {
         console.log(err);
       }
@@ -101,6 +95,5 @@ router.delete("/api/product/:id", (req, res) => {
     }
   });
 });
-
 
 module.exports = router;

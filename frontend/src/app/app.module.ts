@@ -20,6 +20,7 @@ import { LatestProductsComponent } from './home/latest-products/latest-products.
 import { OffersComponent } from './home/offers/offers.component';
 import { TopBrandsComponent } from './home/top-brands/top-brands.component';
 import { HomeComponent } from './home/home.component';
+import { AdminViewProductComponent } from './admin/admin-view-product/admin-view-product.component';
 
 import { UserProductDetailsComponent } from './user-product-details/user-product-details.component';
 import { ProductDescriptionComponent } from './user-product-details/product-description/product-description.component';
@@ -42,7 +43,8 @@ import { ProductDescriptionComponent } from './user-product-details/product-desc
     FooterComponent,
 
     UserProductDetailsComponent,
-    ProductDescriptionComponent
+    ProductDescriptionComponent,
+    AdminViewProductComponent
   ],
   imports: [
     BrowserModule,
